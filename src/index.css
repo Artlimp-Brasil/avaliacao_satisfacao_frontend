@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sistema de avaliação - Design minimalista com cores suaves */
+
+@layer base {
+  :root {
+    /* Cores principais suaves */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 27%;
+
+    /* Cores do card */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Primary - tons suaves de azul */
+    --primary: 320 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - tons suaves de cinza */
+    --secondary: 320 15% 95%;
+    --secondary-foreground: 320 85% 25%;
+
+
+    /* Evaluation theme colors */
+    --evaluation-purple: 320 85% 45%;
+    --evaluation-purple-dark: 320 85% 35%;
+    --evaluation-text: 0 0% 100%;
+    --evaluation-subtitle: 320 25% 85%;
+    --evaluation-button: 0 0% 100%;
+    --evaluation-button-text: 320 85% 25%;
+    
+    /* Muted */
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 13% 50%;
+
+    /* Accent - tom suave de verde */
+    --accent: 140 30% 75%;
+    --accent-foreground: 215 25% 27%;
+
+    /* Destructive - tom suave de vermelho */
+    --destructive: 0 50% 70%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders e inputs */
+    --border: 210 15% 88%;
+    --input: 210 15% 92%;
+    --ring: 210 40% 65%;
+
+    /* Gradientes suaves */
+    --gradient-main: linear-gradient(135deg, hsl(210 40% 65%), hsl(200 35% 75%));
+    --gradient-soft: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 15% 95%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 15% 97%));
+
+    /* Sombras suaves */
+    --shadow-soft: 0 4px 20px -4px hsl(210 40% 65% / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(210 40% 65% / 0.12);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
